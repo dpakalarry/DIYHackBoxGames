@@ -1,4 +1,4 @@
-	class IGame:
+class IGame:
 	def IGame(self):
 		pass
 		#This is the constructor, do whatever you want to construct here
