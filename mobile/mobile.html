@@ -1,18 +1,23 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title></title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="">
+		<link rel="stylesheet" href="styling.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
 	</head>
-	<body>        
-		<div><label id="title" class = "TitleText">INSERT TITLE HERE</label></div>
-		<div><input type="text" id="inputField" class="TextField"></div>
-		<div class="Selectors"><table id="selectableTable">
-			<tr></tr>
-		</table></div>
-		<script src="mobile.js" async defer></script>
+	<body>       
+		<div class="wrapper">
+			<div id="title" class = "text-center TitleText">Type Entry Code: </div>
+			<input type="text" id="inputField" class="form-control TextField Show">
+			<div class="Selectors list-group">
+
+			</div>
+			<button type="button" id="submitButton" class = "SubmitButton Show btn btn-primary" onclick=submitText()>Submit</button>
+			<script src="mobile.js" async defer></script>
+		</div>
 	</body>
 </html>

@@ -10,7 +10,7 @@ game: IGame
 async def root() -> str:
 	newId = str(uuid.uuid4())
 	game.addPlayer(newId)
-	return newId
+	return {"id": newId}
 
 
 @app.on_event("startup")
@@ -22,5 +22,5 @@ async def refresh(playerId: str)  -> dict:
 	return game.bufferedActions(playerId)
 
 @app.get("/return")
-async def refresh(playerId: str, value: dict)  -> void:
+async def ret(playerId: str, value: dict)  -> void:
 	game.getResponseFromPlayer(playerId, value)

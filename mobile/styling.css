@@ -1,12 +1,34 @@
 .TitleText{
-	width: 80%;
 	margin-top:10px;
 }
 
-.TextField{
-	display: none
+.TextField.form-control{
+	margin-top:10px;
+	display: none;
 }
 
+.TextField.form-control.Show{
+	display:block
+}
+
+
 .Selectors{
-	display: none
+	display: none;
+}
+
+.Selectors.Show{
+	display: block;
+}
+
+.SubmitButton.btn.btn-primary{
+	display: none;
+}
+
+.SubmitButton.btn.btn-primary.Show{
+	display: block;
+	margin-top: 20px;
+}
+
+.wrapper{
+	margin: 2% 5%;
 }
